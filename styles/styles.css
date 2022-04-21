@@ -1,0 +1,240 @@
+body {
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+  background-color: #000;
+  background-attachment: fixed;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 50%;
+  margin: auto;
+}
+
+.p {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.text {
+  overflow: hidden;
+  animation: grow 2s ease-in-out 0.3s 1 forwards;
+}
+
+@keyframes grow {
+  from {
+    height: 0px;
+    color: rgba(230, 230, 230, 0);
+  }
+  to {
+    height: 250px;
+    color: rgba(230, 230, 230, 0.9);
+  }
+}
+
+p {
+  font-size: 25px;
+  font-family: impact;
+  padding: 10px;
+  margin-top: -10px;
+}
+
+@font-face {
+  font-family: valorant;
+  src: url("/fonts/val_font.ttf");
+}
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+  font-family: valorant;
+  color: #000;
+}
+
+@font-face {
+  font-family: minecraft;
+  src: url("/fonts/MinecraftRegular-Bmg3.otf");
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  font-family: minecraft;
+  color: #fff;
+}
+
+h3 {
+  font-size: 30px;
+  text-align: center;
+  font-family: impact;
+  color: #fff;
+}
+
+.glow {
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 0px #000, 0 0 20px #fff, 0 0 30px #8500cc, 0 0 40px #8500cc,
+      0 0 50px #0003cc, 0 0 60px #0003cc;
+  }
+  to {
+    text-shadow: 0 0 3px #000, 0 0 30px #f00, 0 0 40px #f00, 0 0 50px #fff,
+      0 0 60px #fff, 0 0 70px #fff;
+  }
+}
+
+#button:link,
+#button:visited {
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 8px;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0 0 20px #fff, 0 0 10px #fff;
+  text-align: center;
+  letter-spacing: normal;
+  width: 150px;
+  height: 35px;
+  font-size: 30px;
+  font-family: impact;
+  border-style: solid;
+  border-image-source: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.3),
+    rgba(0, 0, 0, 0.3)
+  );
+  transition: background-color 0.5s, text-shadow 0.5s, letter-spacing 0.5s,
+    border-image-source 0.5s;
+  border-image-slice: 1;
+}
+
+#button:hover,
+#button:active {
+  background-color: rgba(0, 0, 0, 1);
+  text-shadow: 0 0 10px #000;
+  letter-spacing: 5px;
+  border-image-source: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1),
+    rgba(255, 255, 255, 1)
+  );
+  animation: border 0.75s ease-in-out infinite alternate;
+}
+
+@keyframes border {
+  from {
+    border-image-source: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1),
+      rgba(0, 0, 0, 1)
+    );
+  }
+  to {
+    border-image-source: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(255, 255, 255, 1)
+    );
+  }
+}
+
+.box {
+  border: solid;
+  border-image-slice: 1;
+  border-color: #fff;
+}
+
+.con {
+  overflow: hidden;
+  height: 40px;
+  transition: height 0.5s, color 0.5s;
+  align-items: center;
+  justify-content: center;
+  color: rgba(230, 230, 230, 0);
+}
+
+.discord:hover {
+  height: 200px;
+  color: rgba(230, 230, 230, 0.9);
+}
+
+#discord:link,
+#discord:visited {
+  background-color: #5865f2;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  font-family: impact;
+}
+#discord:hover,
+#discord:active {
+  background-color: #3a49e8;
+}
+
+#youtube:link,
+#youtube:visited {
+  background-color: red;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  font-family: impact;
+}
+#youtube:hover,
+#youtube:active {
+  background-color: #a10303;
+}
+
+.youtube:hover {
+  height: 150px;
+}
+
+#twitch:link,
+#twitch:visited {
+  background-color: #6441a5;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  font-family: impact;
+}
+
+#twitch:hover,
+#twitch:active {
+  background-color: #482e78;
+}
+
+.twitch:hover {
+  height: 150px;
+}
+
+strong {
+  font-weight: normal;
+  text-decoration: underline;
+  font-family: impact;
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+#aboutme {
+  line-height: 175%;
+  margin-left: 5%;
+  margin-top: 1%;
+  font-weight: lighter;
+  font-size: 35px;
+  font-family: Haettenschweiler;
+}
